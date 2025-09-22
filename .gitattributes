@@ -1,2 +1,28 @@
-# Auto detect text files and perform LF normalization
+# Handle line endings automatically for text files
 * text=auto
+
+# Force LF for certain file types (Unix-style line endings)
+*.sh text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.md text eol=lf
+
+# Keep Windows-style endings for batch files
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary files (no diffing)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.mp4 binary
+*.mp3 binary
+*.wav binary
+*.ogg binary
+*.ttf binary
+*.dll binary
+*.exe binary
+*.so binary
+*.dylib binary
